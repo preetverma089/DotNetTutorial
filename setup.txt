@@ -1,1 +1,5 @@
-installtion commnad in folder for first time:- dotnet new console -o
+installtion commnad in folder for first time:- dotnet new console -o folderName -f net7.0
+
+open codeRunner-> settings-> executerMap-> csharp-> (pasteThis)   "csharp": "cd $dir && dotnet run", for windows:- "csharp": "cd $dir ; dotnet run",
+
+change keyboard shortcut for coderunner -> command + ' ;
