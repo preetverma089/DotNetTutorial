@@ -2,6 +2,8 @@
 // Console.WriteLine("Hello, World!");
 
 
+using System.Runtime.CompilerServices;
+
 class MainProgram
 {
    public static void Main(string[] args){
@@ -54,7 +56,51 @@ class MainProgram
 //  int num = Convert.ToInt32(str);
 //  Console.WriteLine(num.GetType());
 
- string name = "Preet";
+//  string name = "Preet";
+
+// Console.WriteLine("Enter a number:> ");
+// string data = Console.ReadLine();
+// Console.WriteLine(data);
+
+
+
+// String methods 
+
+// basic things charters denoted in '' single quotes and string denotes in double quotes ""
+string str = "Preet";
+string str2 = "Prince"; 
+string newStr = string.Concat(str2, " ", str);
+Console.WriteLine(newStr.Length); // give string length
+Console.WriteLine(newStr); // 
+Console.WriteLine(newStr.ToUpper()); // to convert it into upper case
+Console.WriteLine(newStr.IndexOf('e')); //it give -1 if char not exists 
+string str3 = newStr.Replace('P','N'); // it replace specific value
+string str4 = newStr.Insert(2,"n"); // it insert any value at specific place and it use string not char
+Console.WriteLine(str4);
+string name = "Preet";
+bool isStringWqual = str.Equals(name);  // checking is string is equal or not 
+Console.WriteLine(isStringWqual);
+
+bool isCharExists = str.Contains('r');
+Console.WriteLine("char exists " + isCharExists);
+
+string trimmed = "    pre et  "; 
+Console.WriteLine(trimmed.Trim()); // it removed white spaces from first and last not in between
+
+string Intro = "My name is Preet Verma";
+string sub = Intro.Substring(0); // it create a new substring from existing string
+Console.WriteLine(sub);
+
+string tot = "Pr,e,t Ve,rm,a";
+string[] tuned = tot.Split(','); 
+
+for(int i = 0; i<tuned.Length; i++){
+   Console.WriteLine(tuned[i]);
+}
+// foreach (string s in tuned)
+// {
+//     System.Console.WriteLine(s);
+// }
 
    }
 }
